@@ -26,11 +26,17 @@ conanfile.lock
 *.lo
 *.la
 *.dylib
+*.data
+*.wasm
+*.asm.js
+*.temp
 
 #IDE and editor settings
+.emscripten_cache/
 .vs/
 .vscode/
 !/.vscode/tasks.json
+.idea
 /*.user
 *.useroscache
 *.swp
@@ -53,6 +59,7 @@ conanfile.lock
 
 # Temporary files
 bin/
+tmp/
 lib/
 obj/
 runTests
