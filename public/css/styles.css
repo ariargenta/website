@@ -1,62 +1,110 @@
 @font-face {
     font-family: 'JuliaMono';
-    src: url('./fonts/JuliaMono-ExtraBold.ttf') format('truetype');
+    src: url('../assets/fonts/JuliaMono-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JuliaMono';
+    src: url('../assets/fonts/JuliaMono-Medium.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/Helvetica-Bold.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica';
-    src: url('./fonts/Helvetica-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Helvetica';
-    src: url('./fonts/Helvetica.ttf') format('truetype');
+    src: url('../assets/fonts/Helvetica.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
-body {
-    background-color: #000000;
+body, html {
+    background-color: #282A36;
     color: #ffffff;
     margin: 0;
     padding: 0;
     font-family: 'JuliaMono', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px, 1fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #000000;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    margin-left: 300px;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
 }
 
 .name {
     font-family: 'Helvetica', sans-serif;
-    font-weight: 700;
-    color: #00e5ff;
-    text-shadow: 0 0 5px #00e5ff, 0 0 10px #00e5ff, 0 0 15px #00e5ff;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
 }
 
 .middle-name {
     font-family: 'Helvetica', sans-serif;
-    font-weight: 700;
-    color: #ff00ff;
-    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
 }
 
 .lastname {
     font-family: 'Helvetica', sans-serif;
-    font-weight: 700;
-    color: #ffff00;
-    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #0000ff;
+    text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff;
 }
 
 .last-lastname {
     font-family: 'Helvetica', sans-serif;
-    font-weight: 700;
-    color: #00ff00;
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
 }
 
-.profile {
+.specialization {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
-    color: #ffffff;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+
+.degree {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+}
+
+.responsability {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: #ffff00;
+    text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00;
 }
