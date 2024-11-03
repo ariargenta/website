@@ -64,7 +64,6 @@ img.github-icon, img.linkedin-icon {
 .sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     position: fixed;
     width: 40vw;
     height: 100%;
@@ -99,12 +98,22 @@ img.github-icon, img.linkedin-icon {
     text-shadow: 0 0 1rem #ff0000, 0 0 1.5rem #ff0000, 0 0 2rem #ff0000;
 }
 
+.name:hover {
+    filter: invert(1);
+    transition: background-color 0.25s ease;
+}
+
 .middle-name {
     font-family: 'Helvetica', sans-serif;
     font-weight: 900;
     font-size: 2rem;
     color: #00ff00;
     text-shadow: 0 0 1rem #00ff00, 0 0 1.5rem #00ff00, 0 0 2rem #00ff00;
+}
+
+.middle-name:hover {
+    filter: invert(1);
+    transition: background-color 0.25s ease;
 }
 
 .lastname {
@@ -115,12 +124,22 @@ img.github-icon, img.linkedin-icon {
     text-shadow: 0 0 1rem #0000ff, 0 0 1.5rem #0000ff, 0 0 2rem #0000ff;
 }
 
+.lastname:hover {
+    filter: invert(1);
+    transition: background-color 0.25s ease;
+}
+
 .last-lastname {
     font-family: 'Helvetica', sans-serif;
     font-weight: 900;
     font-size: 2rem;
     color: #ffffff;
     text-shadow: 0 0 1rem #ffffff, 0 0 1.5rem #ffffff, 0 0 2rem #ffffff;
+}
+
+.last-lastname:hover {
+    color: #F8F8F2;
+    text-shadow: 0 0 1rem #F8F8F2, 0 0 1.5rem #F8F8F2, 0 0 2rem #F8F8F2;
 }
 
 .specialization {
@@ -130,6 +149,11 @@ img.github-icon, img.linkedin-icon {
     text-shadow: 0 0 1rem #00ffff, 0 0 1.5rem #00ffff, 0 0 2rem #00ffff;
 }
 
+.specialization:hover {
+    filter: invert(1);
+    transition: background-color 0.25s ease;
+}
+
 .degree {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
@@ -137,14 +161,27 @@ img.github-icon, img.linkedin-icon {
     text-shadow: 0 0 1rem #ff00ff, 0 0 1.5rem #ff00ff, 0 0 2rem #ff00ff;
 }
 
+.degree:hover {
+    filter: invert(1);
+    transition: background-color 0.25s ease;
+}
+
 .responsability {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     color: #ffff00;
     text-shadow: 0 0 1rem #ffff00, 0 0 1.5rem #ffff00, 0 0 2rem #ffff00;
+    transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.responsability:hover {
+    filter: invert(1);
+    transition: background-color 0.25s ease;
 }
 
 .footer-icons {
     display: flex;
     gap: 1rem;
+    margin-top: auto;
+    padding-bottom: 3rem;
 }
