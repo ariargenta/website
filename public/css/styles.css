@@ -179,6 +179,17 @@ img.github-icon, img.linkedin-icon {
     transition: background-color 0.25s ease;
 }
 
+.vignette {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vignette:hover {
+    font-family: Helvetica, sans-serif;
+    background-color: #282A36;
+    transform: scale(1.075);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .footer-icons {
     display: flex;
     gap: 1rem;
